@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Weirdalgorithm {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long n = scanner.nextLong();
+
+        while (true) {
+            System.out.print(n + " ");
+            if (n == 1) {
+                break;
+            }
+            if (n % 2 == 0) {
+                n /= 2;
+            } else {
+                n = n * 3 + 1;
+            }
+        }
+        scanner.close();
+    }
+}
